@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet var weatherIconImageView: UIImageView!
     @IBOutlet var humidity: UILabel!
     @IBOutlet var pressure: UILabel!
+    @IBOutlet var activityInd: UIActivityIndicatorView!
     
     
     
@@ -27,15 +28,26 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         startLocationManager()
+        toggleActivityIndicator(on: true)
     }
+    
+    func toggleActivityIndicator(on: Bool) {
+        if on {
+            
+            activityInd.startAnimating()
+        } else {
+            activityInd.stopAnimating()
+        }
+    }
+    
     
     func updateView() {
         cityNameLabel.text = weatherData.name
         weatherDescription.text = DataSource.weatherIDs[weatherData.weather[0].id]
         temperature.text = weatherData.main.temp.description + "ºC"
         weatherIconImageView.image = UIImage(named: weatherData.weather[0].icon)
-        humidity.text = "\(weatherData.main.humidity)mm"
-        pressure.text = "\(weatherData.main.pressure)%"
+        humidity.text = "\(Int(weatherData.main.humidity / 0.75))mm"
+        pressure.text = "\(Int(weatherData.main.pressure / 100))%"
     }
     
     func startLocationManager() {
@@ -61,6 +73,7 @@ class ViewController: UIViewController {
                 self.weatherData = try JSONDecoder().decode(WeatherData.self, from: data!)
                 DispatchQueue.main.async {
                     self.updateView()
+                    self.toggleActivityIndicator(on: false)
                 }
             } catch {
                 //alert

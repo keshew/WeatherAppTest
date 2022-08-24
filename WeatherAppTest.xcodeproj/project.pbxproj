@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		869FB3FA28B6681B00C55ED9 /* DataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869FB3F928B6681B00C55ED9 /* DataModels.swift */; };
 		869FB3FC28B671BE00C55ED9 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869FB3FB28B671BE00C55ED9 /* DataSource.swift */; };
+		869FB3FE28B67ACC00C55ED9 /* ParticlesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869FB3FD28B67ACC00C55ED9 /* ParticlesView.swift */; };
+		869FB40028B67B0100C55ED9 /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 869FB3FF28B67B0100C55ED9 /* MyParticle.sks */; };
 		86E7EF9428B659A9000146E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E7EF9328B659A9000146E6 /* AppDelegate.swift */; };
 		86E7EF9628B659A9000146E6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E7EF9528B659A9000146E6 /* SceneDelegate.swift */; };
 		86E7EF9828B659A9000146E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E7EF9728B659A9000146E6 /* ViewController.swift */; };
@@ -20,6 +22,8 @@
 /* Begin PBXFileReference section */
 		869FB3F928B6681B00C55ED9 /* DataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModels.swift; sourceTree = "<group>"; };
 		869FB3FB28B671BE00C55ED9 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataSource.swift; path = ../../../../Downloads/Resources/DataSource.swift; sourceTree = "<group>"; };
+		869FB3FD28B67ACC00C55ED9 /* ParticlesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticlesView.swift; sourceTree = "<group>"; };
+		869FB3FF28B67B0100C55ED9 /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle.sks; sourceTree = "<group>"; };
 		86E7EF9028B659A9000146E6 /* WeatherAppTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherAppTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86E7EF9328B659A9000146E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86E7EF9528B659A9000146E6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +70,8 @@
 				86E7EF9728B659A9000146E6 /* ViewController.swift */,
 				869FB3F928B6681B00C55ED9 /* DataModels.swift */,
 				86E7EF9928B659A9000146E6 /* Main.storyboard */,
+				869FB3FF28B67B0100C55ED9 /* MyParticle.sks */,
+				869FB3FD28B67ACC00C55ED9 /* ParticlesView.swift */,
 				86E7EF9C28B659AA000146E6 /* Assets.xcassets */,
 				86E7EF9E28B659AA000146E6 /* LaunchScreen.storyboard */,
 				86E7EFA128B659AA000146E6 /* Info.plist */,
@@ -134,6 +140,7 @@
 				86E7EFA028B659AA000146E6 /* LaunchScreen.storyboard in Resources */,
 				86E7EF9D28B659AA000146E6 /* Assets.xcassets in Resources */,
 				86E7EF9B28B659A9000146E6 /* Main.storyboard in Resources */,
+				869FB40028B67B0100C55ED9 /* MyParticle.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +153,7 @@
 			files = (
 				86E7EF9828B659A9000146E6 /* ViewController.swift in Sources */,
 				869FB3FA28B6681B00C55ED9 /* DataModels.swift in Sources */,
+				869FB3FE28B67ACC00C55ED9 /* ParticlesView.swift in Sources */,
 				86E7EF9428B659A9000146E6 /* AppDelegate.swift in Sources */,
 				869FB3FC28B671BE00C55ED9 /* DataSource.swift in Sources */,
 				86E7EF9628B659A9000146E6 /* SceneDelegate.swift in Sources */,
